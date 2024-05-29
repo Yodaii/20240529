@@ -2,6 +2,7 @@ import "./styles.css";
 
 const canvas = document.querySelector("#draw-area");
 const context = canvas.getContext("2d");
+let lineColor = "#FF0000";
 
 canvas.addEventListener("mousemove", (event) => {
   draw(event.layerX, event.layerY);
@@ -40,6 +41,7 @@ function draw(x, y) {
     return;
   }
   context.lineWidth = 5;
+  context.strokeStyle = lineColor;
   context.lineTo(x, y);
   context.stroke();
 }

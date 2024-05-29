@@ -1,3 +1,3 @@
-body {
-  overflow: hidden;
+#draw-area {
+  background-color: pink;
 }
